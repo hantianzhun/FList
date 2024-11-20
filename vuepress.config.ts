@@ -39,9 +39,9 @@ export default defineUserConfig({
         // 仓库所有者的用户名
         user: "hantianzhun",
         // 仓库所有者的仓库名
-        repository: "Flist"
+        repository: "FList"
       }),
-downProxy: cloudflarePagesDownProxy(),
+  downProxy: cloudflarePagesDownProxy(),
     },
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
