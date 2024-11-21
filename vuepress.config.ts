@@ -43,6 +43,14 @@ export default defineUserConfig({
       }),
       downProxy: cloudflarePagesDownProxy(),
     },
+    {
+      mountPath: "/blog",
+      analysis: githubReposAnalysis({
+        user: "hantianzhun",
+        repository: "blog",
+      }),
+      downProxy: cloudflarePagesDownProxy()
+    },
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
