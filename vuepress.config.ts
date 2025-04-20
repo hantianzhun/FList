@@ -47,14 +47,6 @@ export default defineUserConfig({
       }),
       downProxy: cloudflarePagesDownProxy(),
     },
-    {
-      mountPath: "/",
-      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
-      analysis: fileUrlTreeAnalysis({
-        "/视频/王六堡.表演一个腰上滚伞.mp4": "https://blog.587459.xyz/%E7%8E%8B%E5%85%AD%E5%A0%A1.%E8%A1%A8%E6%BC%94%E4%B8%80%E4%B8%AA%E8%85%B0%E4%B8%8A%E6%BB%9A%E4%BC%9E.mp4"
-        }),
-      downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
-    },
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
