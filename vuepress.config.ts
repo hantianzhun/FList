@@ -44,8 +44,8 @@ export default defineUserConfig({
         authorizationToken: process.env.githubToken,
         // 分页大小，不懂得话就当作取最新的多少个标签吧。
         per_page: 10,
-        downProxy: cloudflarePagesDownProxy(),
       }),
+      downProxy: cloudflarePagesDownProxy(),
     },
     {
       mountPath: "/",
